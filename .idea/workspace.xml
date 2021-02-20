@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29202940-659c-4da3-991c-9186e526637e" name="Default Changelist" comment="Done">
+    <list default="true" id="29202940-659c-4da3-991c-9186e526637e" name="Default Changelist" comment="Updated">
+      <change afterPath="$PROJECT_DIR$/Lesson_3/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/data/users.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/static/error.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/static/login.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/static/registration.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/static/user.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/static/users.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Practice_1/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_1/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_1/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_1/dir/1800/Anna.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_1/dir/1800/Ivanka.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_1/dir/1800/Solomiya.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_1/dir/2000/Andriy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_1/dir/2000/Ivan.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_1/dir/2000/Oleg.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_1/recursiontask/begin/33.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_1/recursiontask/begin/55.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_1/recursiontask/begin/second/4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_1/recursiontask/begin/second/third/fours/2.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +71,9 @@
       <workItem from="1613627107999" duration="6817000" />
       <workItem from="1613633996804" duration="123000" />
       <workItem from="1613634129832" duration="1338000" />
-      <workItem from="1613641721877" duration="2161000" />
+      <workItem from="1613641721877" duration="2356000" />
+      <workItem from="1613743810879" duration="2412000" />
+      <workItem from="1613810621652" duration="15053000" />
     </task>
     <task id="LOCAL-00001" summary="Done">
       <created>1613635317511</created>
@@ -82,14 +82,41 @@
       <option name="project" value="LOCAL" />
       <updated>1613635317511</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated">
+      <created>1613643989317</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613643989317</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated">
+      <created>1613644033775</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613644033775</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done" />
+    <MESSAGE value="Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
   </component>
 </project>
