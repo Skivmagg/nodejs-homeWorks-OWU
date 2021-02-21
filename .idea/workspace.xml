@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29202940-659c-4da3-991c-9186e526637e" name="Default Changelist" comment="Updated">
-      <change afterPath="$PROJECT_DIR$/Lesson_3/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_3/data/users.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_3/static/error.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_3/static/login.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_3/static/registration.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_3/static/user.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_3/static/users.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice_1/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="29202940-659c-4da3-991c-9186e526637e" name="Default Changelist" comment="Second homework done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson_3/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_3/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson_3/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_3/data/users.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +66,9 @@
       <workItem from="1613634129832" duration="1338000" />
       <workItem from="1613641721877" duration="2356000" />
       <workItem from="1613743810879" duration="2412000" />
-      <workItem from="1613810621652" duration="15053000" />
+      <workItem from="1613810621652" duration="16082000" />
+      <workItem from="1613939111634" duration="368000" />
+      <workItem from="1613942461512" duration="1640000" />
     </task>
     <task id="LOCAL-00001" summary="Done">
       <created>1613635317511</created>
@@ -96,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613644033775</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Second homework done">
+      <created>1613829916861</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1613829916861</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +119,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Done" />
     <MESSAGE value="Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
+    <MESSAGE value="Second homework done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second homework done" />
   </component>
 </project>
