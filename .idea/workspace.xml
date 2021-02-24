@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29202940-659c-4da3-991c-9186e526637e" name="Default Changelist" comment="Second homework done">
+    <list default="true" id="29202940-659c-4da3-991c-9186e526637e" name="Default Changelist" comment="Updated">
+      <change afterPath="$PROJECT_DIR$/Lesson_3_real/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3_real/constant/errorCodes.enum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3_real/controller/user.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3_real/dataBase/users.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3_real/message/error.message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3_real/message/success.message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3_real/middleware/user.middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3_real/router/api.router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3_real/router/user.router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3_real/service/user.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_3/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_3/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_3/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_3/data/users.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="package.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -34,13 +42,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.1" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.28" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lesson_1/recursiontask/begin/second/third/fours" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lesson_3_real/dataBase" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Anton\Desktop\nodejs\Lesson_3_real\dataBase" />
+      <recent name="C:\Users\Anton\Desktop\nodejs\Lesson_3_real" />
       <recent name="C:\Users\Anton\Desktop\nodejs\Lesson_1\recursiontask\begin\second\third\fours" />
       <recent name="C:\Users\Anton\Desktop\nodejs\Lesson_1\dir\2000" />
       <recent name="C:\Users\Anton\Desktop\nodejs\Lesson_1\dir\1800" />
@@ -52,6 +62,11 @@
       <recent name="C:\Users\Anton\Desktop\nodejs\Lesson_1\recursiontask\begin" />
       <recent name="C:\Users\Anton\Desktop\nodejs\Lesson_1\dir\1800" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/Lesson_3_real">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -68,7 +83,10 @@
       <workItem from="1613743810879" duration="2412000" />
       <workItem from="1613810621652" duration="16082000" />
       <workItem from="1613939111634" duration="368000" />
-      <workItem from="1613942461512" duration="1640000" />
+      <workItem from="1613942461512" duration="2621000" />
+      <workItem from="1614071464205" duration="3653000" />
+      <workItem from="1614092957570" duration="3033000" />
+      <workItem from="1614149485447" duration="9978000" />
     </task>
     <task id="LOCAL-00001" summary="Done">
       <created>1613635317511</created>
@@ -98,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613829916861</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated">
+      <created>1613944238036</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613944238036</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,8 +143,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Done" />
-    <MESSAGE value="Updated" />
     <MESSAGE value="Second homework done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second homework done" />
+    <MESSAGE value="Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
   </component>
 </project>
