@@ -1,4 +1,4 @@
-const {promisify} = require('util');
+const { promisify } = require('util');
 const fs = require('fs');
 const path = require('path');
 
@@ -31,11 +31,10 @@ module.exports = {
         await writeFile(dataBasePath, JSON.stringify(usersParse));
     },
 
-    getUserByEmail: async (userEmail) => {
+    getUserById: async (userId) => {
         const users = await readFile(dataBasePath);
         const usersParse = JSON.parse(users.toString());
 
-        return usersParse.filter(user => user.email === userEmail);
+        return usersParse[userId];
     }
-}
-
+};
