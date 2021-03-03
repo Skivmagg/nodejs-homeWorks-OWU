@@ -29,4 +29,9 @@ module.exports = {
         ua: 'Рік введено не правильно',
         ru: 'Неправильный год'
     },
+    USER_IS_REGISTERED: {
+        en: 'User allready registered',
+        ua: 'Користувач вже зараєстровано',
+        ru: 'Пользователь уже зарегестирован'
+    }
 };

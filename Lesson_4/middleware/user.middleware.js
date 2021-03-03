@@ -1,5 +1,6 @@
 const errorCodes = require('../constant/errorCodes.enum');
 const errorMessage = require('../message/error.message');
+const User = require('../dataBase/models/User');
 const { getUserById } = require('../service/user.service');
 
 module.exports = {
@@ -34,6 +35,23 @@ module.exports = {
 
             if (age < 0) {
                 throw new Error(errorMessage.NOT_VALID_AGE[preferL]);
+            }
+
+            next();
+        } catch (e) {
+            res.status(errorCodes.BAD_REQUEST).json(e.message);
+        }
+    },
+
+    isUserRegistered: async (req, res, next) => {
+        try {
+            const { email } = req.body;
+            const { preferL } = req.query;
+
+            const user = await User.findOne({ email });
+
+            if (user) {
+                throw new Error(errorMessage.USER_IS_REGISTERED[preferL]);
             }
 
             next();

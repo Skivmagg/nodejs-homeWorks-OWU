@@ -4,6 +4,7 @@ const userSchema = new Schema({
     firstName: { type: String, required: true },
     lastName: { type: String, required: true },
     age: { type: Number, default: 18 },
+    email: { type: String },
     cars: [{ type: Schema.Types.ObjectId }]
 }, { timestamps: true, toJSON: { virtuals: true }, toObject: { virtuals: true } });
 
