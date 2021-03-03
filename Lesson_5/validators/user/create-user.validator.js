@@ -1,6 +1,6 @@
 const Joi = require('joi');
 
-const { regexpEnum } = require('../../constant');
+const { constants, regexpEnum } = require('../../constant');
 
 module.exports = Joi.object({
     firstName: Joi.string()
@@ -25,4 +25,8 @@ module.exports = Joi.object({
         .min(24)
         .max(24)
         .optional(),
+    yearOfBorn: Joi.number()
+        .integer()
+        .min(constants.CURRENT_YEAR - 100)
+        .max(constants.CURRENT_YEAR)
 });

@@ -1,6 +1,6 @@
-const carService = require('../service/car.service');
-const statusCode = require('../constant/errorCodes.enum');
-const successMessage = require('../message/success.message');
+const { carService } = require('../service');
+const { errorCodesEnum } = require('../constant');
+const { successMessage } = require('../message');
 
 module.exports = {
     getAllCars: async (req, res) => {
@@ -9,7 +9,7 @@ module.exports = {
 
             res.json(cars);
         } catch (e) {
-            res.status(statusCode.BAD_REQUEST).res.json(e.message);
+            res.status(errorCodesEnum.BAD_REQUEST).res.json(e.message);
         }
     },
 
@@ -21,7 +21,7 @@ module.exports = {
 
             res.json(successMessage.CAR_CREATED[preferL]);
         } catch (e) {
-            res.status(statusCode.BAD_REQUEST).res.json(e.message);
+            res.status(errorCodesEnum.BAD_REQUEST).res.json(e.message);
         }
     },
 
@@ -34,7 +34,7 @@ module.exports = {
 
             res.json(successMessage.CAR_DELETED[preferL]);
         } catch (e) {
-            res.status(statusCode.BAD_REQUEST).res.json(e.message);
+            res.status(errorCodesEnum.BAD_REQUEST).res.json(e.message);
         }
     },
 
@@ -46,7 +46,7 @@ module.exports = {
 
             res.json(car);
         } catch (e) {
-            res.status(statusCode.BAD_REQUEST).res.json(e.message);
+            res.status(errorCodesEnum.BAD_REQUEST).res.json(e.message);
         }
     }
 

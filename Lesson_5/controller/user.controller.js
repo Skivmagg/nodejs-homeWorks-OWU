@@ -1,6 +1,6 @@
-const userService = require('../service/user.service');
-const statusCode = require('../constant/errorCodes.enum');
-const successMessage = require('../message/success.message');
+const { userService } = require('../service');
+const { errorCodesEnum } = require('../constant');
+const { successMessage } = require('../message');
 
 module.exports = {
     getAllUsers: async (req, res) => {
@@ -9,7 +9,7 @@ module.exports = {
 
             res.json(users);
         } catch (e) {
-            res.status(statusCode.BAD_REQUEST).res.json(e.message);
+            res.status(errorCodesEnum.BAD_REQUEST).res.json(e.message);
         }
     },
 
@@ -21,7 +21,7 @@ module.exports = {
 
             res.json(successMessage.USER_CREATED[preferL]);
         } catch (e) {
-            res.status(statusCode.BAD_REQUEST).res.json(e.message);
+            res.status(errorCodesEnum.BAD_REQUEST).res.json(e.message);
         }
     },
 
@@ -34,7 +34,7 @@ module.exports = {
 
             res.json(successMessage.USER_DELETED[preferL]);
         } catch (e) {
-            res.status(statusCode.BAD_REQUEST).res.json(e.message);
+            res.status(errorCodesEnum.BAD_REQUEST).res.json(e.message);
         }
     },
 
@@ -46,7 +46,7 @@ module.exports = {
 
             res.json(user);
         } catch (e) {
-            res.status(statusCode.BAD_REQUEST).res.json(e.message);
+            res.status(errorCodesEnum.BAD_REQUEST).res.json(e.message);
         }
     }
 
