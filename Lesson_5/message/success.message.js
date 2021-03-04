@@ -18,5 +18,10 @@ module.exports = {
         en: 'Car was deleted',
         ua: 'Машина була видалена',
         ru: 'Машина была удалена'
+    },
+    USER_LOGGED: {
+        en: 'User logged',
+        ua: 'Доступ дозволено',
+        ru: 'Доступ разрешен'
     }
 };

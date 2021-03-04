@@ -8,8 +8,7 @@ module.exports = Joi.object({
         .min(1)
         .max(50)
         .required(),
-    year: Joi.string()
-        .alphanum()
+    year: Joi.number()
         .max(constants.CURRENT_YEAR),
     price: Joi.number()
         .min(100)

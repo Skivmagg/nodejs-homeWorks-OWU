@@ -1,3 +1,4 @@
 module.exports = {
-    userMiddlewares: require('./user.middleware')
+    userMiddlewares: require('./user.middleware'),
+    carMiddlewares: require('./car.middleware')
 };

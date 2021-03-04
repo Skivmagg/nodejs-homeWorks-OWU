@@ -1,6 +1,7 @@
 const { errorCodesEnum } = require('../constant');
 const { errorMessage } = require('../message');
 const { Car } = require('../dataBase/models');
+const { carValidator } = require('../validators');
 
 module.exports = {
     checkIdIsValid: async (req, res, next) => {
@@ -8,10 +9,6 @@ module.exports = {
             const { carId } = req.params;
             const { preferL } = req.query;
             const car = await Car.findById(carId);
-
-            if (carId.length !== 24) {
-                throw new Error(errorMessage.NOT_VALID_ID[preferL]);
-            }
 
             if (!car) {
                 throw new Error(errorMessage.CAR_NOT_FOUND[preferL]);
@@ -23,17 +20,12 @@ module.exports = {
         }
     },
 
-    checkIsCarValid: (req, res, next) => {
+    checkIsCarValid: async (req, res, next) => {
         try {
-            const { model, year, price } = req.body;
-            const { preferL } = req.query;
+            const { error } = await carValidator.createCarValidator.validate(req.body);
 
-            if (!model || !year || !price) {
-                throw new Error(errorMessage.EMPTY_FIELD[preferL]);
-            }
-
-            if (year > 2021 || price < 0) {
-                throw new Error(errorMessage.NOT_VALID_YEAR[preferL]);
+            if (error) {
+                throw new Error(error.details[0].message);
             }
 
             next();
