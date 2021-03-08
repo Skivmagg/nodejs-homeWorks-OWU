@@ -1,8 +1,8 @@
-const { User, O_Auth } = require('../dataBase/models');
+const { User } = require('../dataBase/models');
 
-const { passwordHasher, tokenizer } = require('../helpers');
 const { errorCodesEnum } = require('../constant');
 const { errorMessage } = require('../message');
+const { authService } = require('../service');
 
 module.exports = {
     authUser: async (req, res) => {
@@ -16,15 +16,24 @@ module.exports = {
                 throw new Error(errorMessage.USER_NOT_FOUND[preferL]);
             }
 
-            await passwordHasher.compare(password, user.password);
-
-            const tokens = tokenizer();
-
-            await O_Auth.create({ ...tokens, user: user._id });
+            const tokens = await authService.createTokens(password, user);
 
             res.json(tokens);
         } catch (e) {
-            res.status(errorCodesEnum.BAD_REQUEST).res.json(e.message);
+            res.status(errorCodesEnum.BAD_REQUEST).json(e.message);
+        }
+    },
+
+    createNewTokens: async (req, res) => {
+        try {
+            const { badTokens } = req;
+
+            const tokens = await authService.refreshTokens(badTokens);
+
+            res.json(tokens);
+        } catch (e) {
+            res.status(errorCodesEnum.BAD_REQUEST).json(e.message);
         }
     }
+
 };

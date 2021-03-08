@@ -6,7 +6,7 @@ module.exports = {
         const isPasswordEquels = await bcrypt.compare(password, hashPassword);
 
         if (!isPasswordEquels) {
-            throw new Error('Wrong emeil or password');
+            throw new Error('Wrong email or password');
         }
     }
 };

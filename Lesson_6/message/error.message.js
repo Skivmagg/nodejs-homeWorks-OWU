@@ -33,5 +33,15 @@ module.exports = {
         en: 'User allready registered',
         ua: 'Користувач вже зараєстровано',
         ru: 'Пользователь уже зарегестирован'
+    },
+    TOKEN_IS_REQUIRED: {
+        en: 'Token required',
+        ua: 'Введіть токен',
+        ru: 'Введите токен'
+    },
+    TOKEN_NOT_VALID: {
+        en: 'Token not valid',
+        ua: 'Неправильний токен',
+        ru: 'Неверный токен'
     }
 };

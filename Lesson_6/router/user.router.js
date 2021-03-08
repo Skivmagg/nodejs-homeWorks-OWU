@@ -9,8 +9,6 @@ router.get('/:userId', userMiddlewares.checkIdInBase, userMiddlewares.checkId, u
 
 router.post('/', userMiddlewares.checkIsUserValid, userMiddlewares.isUserRegistered, userController.createUser);
 
-// router.delete('/:userId', userMiddlewares.checkIdInBase,
-// userMiddlewares.checkId, authMiddleware.checkAccessTokenMiddleware, userController.deleteUser);
 router.delete('/:userId', authMiddleware.checkAccessTokenMiddleware, userController.deleteUser);
 
 module.exports = router;
