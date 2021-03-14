@@ -9,5 +9,5 @@ module.exports = {
 
     getCarById: (carId) => Car.findById(carId),
 
-    updateCar: (params, updateBody) => Car.updateOne(params, updateBody),
+    updateCar: (params, updateBody) => Car.updateOne(params, updateBody)
 };

@@ -1,5 +1,5 @@
-const mailer = require('nodemailer');
 const EmailTemplates = require('email-templates');
+const mailer = require('nodemailer');
 const path = require('path');
 
 const templateParser = new EmailTemplates({

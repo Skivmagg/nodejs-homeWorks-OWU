@@ -1,5 +1,5 @@
-const { passwordHasher, tokenizer } = require('../helpers');
 const { O_Auth } = require('../dataBase/models');
+const { passwordHasher, tokenizer } = require('../helpers');
 
 module.exports = {
     createTokens: async (password, user) => {

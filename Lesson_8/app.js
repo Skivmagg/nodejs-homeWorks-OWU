@@ -29,7 +29,7 @@ app.use('*', (err, req, res, next) => {
 });
 
 app.listen(PORT, () => {
-    console.log('App listen 5000');
+    console.log(`App listen ${PORT}`);
 });
 
 function _connectDB() {

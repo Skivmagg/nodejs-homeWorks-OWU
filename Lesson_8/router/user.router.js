@@ -7,13 +7,18 @@ router.get('/', userController.getAllUsers);
 
 router.post('/',
     fileMiddleware.checkFileMiddleware,
-   fileMiddleware.checkAvatar,
+    fileMiddleware.checkAvatar,
     userMiddlewares.checkIsUserValid,
     userMiddlewares.isUserRegistered,
     userController.createUser);
 
-router.get('/:userId', userMiddlewares.checkIdInBase, userMiddlewares.checkId, userController.getUserById);
+router.get('/:userId',
+    userMiddlewares.checkIdInBase,
+    userMiddlewares.checkId,
+    userController.getUserById);
 
-router.delete('/:userId', authMiddleware.checkAccessTokenMiddleware, userController.deleteUser);
+router.delete('/:userId',
+    authMiddleware.checkAccessTokenMiddleware,
+    userController.deleteUser);
 
 module.exports = router;

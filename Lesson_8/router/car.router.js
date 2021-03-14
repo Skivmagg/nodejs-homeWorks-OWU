@@ -5,10 +5,15 @@ const { carMiddlewares, fileMiddleware } = require('../middleware');
 
 router.get('/', carController.getAllCars);
 
-router.get('/:carId', carMiddlewares.checkIdIsValid, carController.getCarById);
+router.use('/:carId', carMiddlewares.checkIdIsValid);
 
-router.post('/', carMiddlewares.checkIsCarValid, fileMiddleware.checkFileMiddleware, carController.createCar);
+router.get('/:carId', carController.getCarById);
 
-router.delete('/:carId', carMiddlewares.checkIdIsValid, carController.deleteCar);
+router.post('/',
+    carMiddlewares.checkIsCarValid,
+    fileMiddleware.checkFileMiddleware,
+    carController.createCar);
+
+router.delete('/:carId', carController.deleteCar);
 
 module.exports = router;

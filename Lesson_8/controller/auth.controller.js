@@ -1,17 +1,12 @@
-const { User } = require('../dataBase/models');
-
-const { errorCodesEnum } = require('../constant');
+const { errorCodesEnum, emailActionsEnum } = require('../constant');
 const ErrorHandler = require('../error/ErrorHandler');
 const { errorMessage } = require('../message');
-const { emailActionsEnum } = require('../constant');
 const { authService, mailService } = require('../service');
 
 module.exports = {
     authUser: async (req, res, next) => {
         try {
-            const { email, password } = req.body;
-
-            const user = await User.findOne({ email });
+            const { user, body: { email, password } } = req;
 
             if (!user) {
                 throw new ErrorHandler(errorCodesEnum.BAD_REQUEST,

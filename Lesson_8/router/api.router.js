@@ -1,8 +1,8 @@
 const router = require('express').Router();
 
-const userRouter = require('./user.router');
-const carRouter = require('./car.router');
 const authRouter = require('./auth.router');
+const carRouter = require('./car.router');
+const userRouter = require('./user.router');
 
 router.use('/users', userRouter);
 router.use('/cars', carRouter);

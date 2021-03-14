@@ -7,7 +7,7 @@ const userSchema = new Schema({
     lastName: { type: String, required: true },
     age: { type: Number, default: 18 },
     email: { type: String, required: true },
-    password: { type: String, required: true, select: false },
+    password: { type: String, required: true },
     avatar: { type: String, required: false },
     docs: [{ type: String, required: false }],
     cars: [{ type: Schema.Types.ObjectId }]

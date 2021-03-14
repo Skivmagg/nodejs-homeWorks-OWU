@@ -1,9 +1,9 @@
 const fs = require('fs-extra').promises;
 
-const { userService, mailService, fileService } = require('../service');
 const { emailActionsEnum } = require('../constant');
-const { successMessage } = require('../message');
 const { passwordHasher } = require('../helpers');
+const { userService, mailService, fileService } = require('../service');
+const { successMessage } = require('../message');
 
 module.exports = {
     getAllUsers: async (req, res, next) => {
@@ -18,8 +18,12 @@ module.exports = {
 
     createUser: async (req, res, next) => {
         try {
-            const { body: { password, email }, avatar, docs } = req;
-            const { preferL } = req.query;
+            const {
+                body: { password, email },
+                avatar, docs,
+                query: { preferL }
+            } = req;
+
             const hashPassword = await passwordHasher.hash(password);
             const docsArr = [];
             const user = await userService.createUser({ ...req.body, password: hashPassword });
@@ -65,9 +69,11 @@ module.exports = {
 
     deleteUser: async (req, res, next) => {
         try {
-            const { preferL } = req.query;
-            const { userId } = req.params;
-            const { email } = req.body;
+            const {
+                query: { preferL },
+                params: { userId },
+                body: { email }
+            } = req;
 
             await userService.deleteUser(userId);
 
@@ -79,11 +85,9 @@ module.exports = {
         }
     },
 
-    getUserById: async (req, res, next) => {
+    getUserById: (req, res, next) => {
         try {
-            const { userId } = req.params;
-
-            const user = await userService.getUserById(userId);
+            const { user } = req;
 
             res.json(user);
         } catch (e) {

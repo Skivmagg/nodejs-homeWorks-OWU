@@ -16,8 +16,12 @@ module.exports = {
 
     createCar: async (req, res, next) => {
         try {
-            const { preferL } = req.query;
-            const { photos, docs, body } = req;
+            const {
+                photos,
+                docs,
+                body,
+                query: { preferL }
+            } = req;
             const docsArr = [];
             const photosArr = [];
             const car = await carService.createCar(body);
@@ -67,9 +71,9 @@ module.exports = {
     deleteCar: async (req, res, next) => {
         try {
             const { preferL } = req.query;
-            const { carId } = req.params;
+            const { car } = req;
 
-            await carService.deleteCar(carId);
+            await carService.deleteCar(car.carId);
 
             res.json(successMessage.CAR_DELETED[preferL]);
         } catch (e) {
@@ -77,11 +81,9 @@ module.exports = {
         }
     },
 
-    getCarById: async (req, res, next) => {
+    getCarById: (req, res, next) => {
         try {
-            const { carId } = req.params;
-
-            const car = await carService.getCarById(carId);
+            const { car } = req;
 
             res.json(car);
         } catch (e) {

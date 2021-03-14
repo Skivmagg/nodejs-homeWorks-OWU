@@ -16,6 +16,8 @@ module.exports = {
                     errorMessage.CAR_NOT_FOUND.message);
             }
 
+            req.car = car;
+
             next();
         } catch (e) {
             next(e);

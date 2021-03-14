@@ -34,6 +34,8 @@ module.exports = {
                     errorMessage.USER_NOT_FOUND.message);
             }
 
+            req.user = user;
+
             next();
         } catch (e) {
             next(e);
