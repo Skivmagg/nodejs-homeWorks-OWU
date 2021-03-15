@@ -130,6 +130,7 @@ module.exports = {
         ],
         'padding-line-between-statements': 'error',
         'prefer-const': 'error',
+        'prefer-object-spread': 'warn',
         'quote-props': [
             'error',
             'as-needed',
